@@ -1,4 +1,4 @@
-# Disk Scheduling Algorithms - Final Version
+
 
 def fcfs(requests, head):
     seek_sequence = [head] + requests + [199]
@@ -23,7 +23,7 @@ def sstf(requests, head):
         seek_sequence.append(current)
         req.remove(closest)
 
-    # move to 199
+    
     seek_time += abs(current - 199)
     current = 199
     seek_sequence.append(current)
@@ -42,25 +42,25 @@ def scan(requests, head, disk_size=199):
     seek_time = 0
     current = head
 
-    # move right
+    
     for r in right:
         seek_time += abs(current - r)
         current = r
         seek_sequence.append(current)
 
-    # go to 199
+    
     if current != disk_size:
         seek_time += abs(current - disk_size)
         current = disk_size
         seek_sequence.append(current)
 
-    # move left
+    
     for r in left:
         seek_time += abs(current - r)
         current = r
         seek_sequence.append(current)
 
-    # finally go to 0
+    
     if current != 0:
         seek_time += abs(current - 0)
         current = 0
@@ -72,7 +72,7 @@ def scan(requests, head, disk_size=199):
 
 
 
-# -------- MENU --------
+
 while True:
     print("\n===== Disk Scheduling Algorithms =====")
     print("1. FCFS")
