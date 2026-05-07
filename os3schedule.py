@@ -1,6 +1,6 @@
 # PRIORITY AND ROUND ROBIN SCHEDULING
 
-# -------- INPUT FUNCTION --------
+
 def input_processes(n, priority=False):
 
     processes = []
@@ -32,7 +32,7 @@ def input_processes(n, priority=False):
     return processes
 
 
-# -------- GANTT CHART --------
+
 def gantt(chart):
 
     print("\nGantt Chart:\n")
@@ -43,7 +43,7 @@ def gantt(chart):
     print("|")
 
 
-# -------- CALCULATION --------
+
 def calculate(processes, priority=False):
 
     total_wt = 0
@@ -76,7 +76,6 @@ def calculate(processes, priority=False):
     print("Average TAT =", total_tat / len(processes))
 
 
-# -------- PRIORITY NON PREEMPTIVE --------
 def priority_non():
 
     n = int(input("Enter number of processes: "))
@@ -112,7 +111,7 @@ def priority_non():
     calculate(p, True)
 
 
-# -------- PRIORITY PREEMPTIVE --------
+
 def priority_pre():
 
     n = int(input("Enter number of processes: "))
@@ -155,7 +154,6 @@ def priority_pre():
     calculate(p, True)
 
 
-# -------- ROUND ROBIN --------
 def round_robin():
 
     n = int(input("Enter number of processes: "))
@@ -214,7 +212,6 @@ def round_robin():
     calculate(p)
 
 
-# -------- MENU --------
 while True:
 
     print("\n===== CPU SCHEDULING MENU =====")
