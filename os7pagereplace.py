@@ -1,4 +1,4 @@
-# PAGE REPLACEMENT ALGORITHMS
+
 
 def print_result(history, status, faults, hits, pages):
 
@@ -29,7 +29,7 @@ def print_result(history, status, faults, hits, pages):
     print("Fault Ratio = {:.2f}%".format(ratio))
 
 
-# FIFO
+
 def fifo():
 
     n = int(input("Enter number of pages: "))
@@ -64,7 +64,7 @@ def fifo():
     print_result(history, status, faults, hits, pages)
 
 
-# LRU
+
 def lru():
 
     n = int(input("Enter number of pages: "))
@@ -110,7 +110,7 @@ def lru():
     print_result(history, status, faults, hits, pages)
 
 
-# OPTIMAL
+
 def optimal():
 
     n = int(input("Enter number of pages: "))
@@ -167,7 +167,7 @@ def optimal():
     print_result(history, status, faults, hits, pages)
 
 
-# MENU
+
 while True:
 
     print("\n===== PAGE REPLACEMENT MENU =====")
