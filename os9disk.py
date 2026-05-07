@@ -93,7 +93,7 @@ while True:
         requests = list(map(int, input("Enter request queue: ").split()))
         
         if len(requests) != n:
-            print(f"❌ Error: You entered {len(requests)} requests, expected {n}. Try again!")
+            print(f" Error: You entered {len(requests)} requests, expected {n}. Try again!")
         else:
             break
 
