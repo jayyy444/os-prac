@@ -1,4 +1,4 @@
-# Producer Consumer Problem
+
 
 buffer = []
 
@@ -13,7 +13,7 @@ while True:
 
     n = int(input("\nENTER YOUR CHOICE "))
 
-    # PRODUCER
+    
     if n == 1:
 
         if len(buffer) == size:
@@ -24,7 +24,7 @@ while True:
             buffer.append(item)
             print("producer produces the item", item)
 
-    # CONSUMER
+    
     elif n == 2:
 
         if len(buffer) == 0:
@@ -34,7 +34,7 @@ while True:
             item = buffer.pop()
             print("consumer consumes item", item)
 
-    # EXIT
+    
     elif n == 3:
 
         print("\nEXIT...\n")
