@@ -1,4 +1,4 @@
-# Banker's Algorithm
+
 
 n = int(input("Enter number of processes: "))
 m = int(input("Enter number of resources: "))
@@ -20,7 +20,7 @@ for i in range(n):
 print("\nEnter Available Resources:")
 available = list(map(int, input().split()))
 
-# Calculate Need Matrix
+
 need = []
 
 for i in range(n):
@@ -29,12 +29,12 @@ for i in range(n):
         row.append(maximum[i][j] - allocation[i][j])
     need.append(row)
 
-# Print Need Matrix
+
 print("\nNeed Matrix:")
 for i in range(n):
     print(f"P{start+i}:", need[i])
 
-# Safety Algorithm
+
 finish = [False] * n
 safe = []
 
@@ -66,7 +66,7 @@ while len(safe) < n:
     if allocated == False:
         break
 
-# Output
+
 if len(safe) == n:
 
     print("\nSystem is in Safe State")
