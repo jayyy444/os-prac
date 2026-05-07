@@ -1,6 +1,6 @@
-# MEMORY ALLOCATION ALGORITHMS
 
-# INPUT
+
+
 n = int(input("Enter number of processes: "))
 
 processes = list(map(int, input("Enter process sizes: ").split()))
@@ -13,7 +13,7 @@ blocks = list(map(int, input("Enter block sizes: ").split()))
 
 
 
-# BEST FIT
+
 def best_fit():
 
     memory = blocks.copy()
@@ -53,7 +53,7 @@ def best_fit():
             print(f"P{i+1}\t{processes[i]}\tNot Allocated")
 
 
-# WORST FIT
+
 def worst_fit():
 
     memory = blocks.copy()
@@ -93,7 +93,7 @@ def worst_fit():
             print(f"P{i+1}\t{processes[i]}\tNot Allocated")
 
 
-# FUNCTION CALLS
+
 
 
 best_fit()
